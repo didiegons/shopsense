@@ -23,7 +23,7 @@ All new resources use the `shopsense` prefix.
 | Cloud Run service | `shopsense-web` | 1 vCPU, 512 MiB, min 0 / max 1 instance, request-based CPU |
 | Service account | `shopsense-api@forensai.iam.gserviceaccount.com` | No roles; add `roles/aiplatform.user` only when enabling Vertex AI |
 | Service account | `shopsense-web@forensai.iam.gserviceaccount.com` | No roles |
-| Artifact Registry | `shopsense` (Docker, `us-central1`) | Cleanup policy keeps the 3 most recent images per package |
+| Artifact Registry | `shopsense` (Docker, `us-central1`) | Cleanup policy keeps the 10 most recent versions per package. Each Cloud Build push stores the image plus 2 provenance attestations, so this retains about the last 3 builds for rollback. |
 | Budget | `shopsense-monthly-5usd` | $5/month alert at 50%, 90%, and 100% for the `forensai` project. An alert only, not a spending cap; it also covers ForensAI because both apps share the project. |
 
 ## Configuration
