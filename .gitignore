@@ -1,0 +1,25 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Node / Next.js
+node_modules/
+.next/
+out/
+*.tsbuildinfo
+next-env.d.ts
+
+# Environment and credentials
+.env*
+*.pem
+*.key
+*credentials*.json
+*service-account*.json
+*-sa-key.json
+
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini

@@ -1,0 +1,136 @@
+[
+  {
+    "id": "laptop_budget_ram",
+    "query": "Laptop under $1000 with at least 16 GB RAM",
+    "category": "laptop",
+    "expected": {
+      "category": "laptop",
+      "hard_constraints": {"max_budget": 1000, "min_ram_gb": 16},
+      "clarification_needed": false
+    }
+  },
+  {
+    "id": "laptop_weight_kg",
+    "query": "Lightweight laptop under 1.5 kg",
+    "category": "laptop",
+    "expected": {
+      "category": "laptop",
+      "hard_constraints": {"max_weight_kg": 1.5},
+      "preferences": {"portability_preference": "lightweight"},
+      "clarification_needed": false
+    }
+  },
+  {
+    "id": "laptop_weight_grams",
+    "query": "Portable laptop under 1500 grams",
+    "category": "laptop",
+    "expected": {
+      "category": "laptop",
+      "hard_constraints": {"max_weight_kg": 1.5},
+      "preferences": {"portability_preference": "lightweight"},
+      "clarification_needed": false
+    }
+  },
+  {
+    "id": "windows_family_mandatory",
+    "query": "Windows only laptop under $900",
+    "category": "laptop",
+    "expected": {
+      "category": "laptop",
+      "hard_constraints": {
+        "max_budget": 900,
+        "operating_system": "Windows",
+        "operating_system_family": "Windows",
+        "operating_system_version": null
+      },
+      "clarification_needed": false
+    }
+  },
+  {
+    "id": "windows_11_preference",
+    "query": "I prefer Windows 11 laptop under $1000",
+    "category": "laptop",
+    "expected": {
+      "category": "laptop",
+      "hard_constraints": {"max_budget": 1000},
+      "preferences": {
+        "operating_system": "Windows 11",
+        "operating_system_family": "Windows",
+        "operating_system_version": "11"
+      },
+      "clarification_needed": false
+    }
+  },
+  {
+    "id": "student_vm_use_case",
+    "query": "Laptop under $1200 for cybersecurity school and virtual machines",
+    "category": "laptop",
+    "expected": {
+      "category": "laptop",
+      "hard_constraints": {"max_budget": 1200},
+      "preferences": {"use_case": "cybersecurity, school, virtual machines"},
+      "clarification_needed": false
+    }
+  },
+  {
+    "id": "vague_portability_request",
+    "query": "I want a lightweight laptop for school",
+    "category": "laptop",
+    "expected": {
+      "category": "laptop",
+      "hard_constraints": {"max_budget": null, "max_weight_kg": null},
+      "preferences": {
+        "use_case": "school",
+        "portability_preference": "lightweight"
+      },
+      "clarification_needed": true
+    }
+  },
+  {
+    "id": "conflicting_budget_values",
+    "query": "Laptop under $800 or under $1000",
+    "category": "laptop",
+    "expected": {
+      "category": "laptop",
+      "hard_constraints": {"max_budget": null},
+      "clarification_needed": true
+    }
+  },
+  {
+    "id": "ambiguous_operating_systems",
+    "query": "Windows or Ubuntu laptop under $1000",
+    "category": "laptop",
+    "expected": {
+      "category": "laptop",
+      "hard_constraints": {
+        "max_budget": 1000,
+        "operating_system": null,
+        "operating_system_family": null,
+        "operating_system_version": null
+      },
+      "clarification_needed": true
+    }
+  },
+  {
+    "id": "camera_sensor_and_body",
+    "query": "Camera with a full-frame sensor, preferably mirrorless",
+    "category": "camera",
+    "expected": {
+      "category": "camera",
+      "category_hard_constraints": {"sensor_format": "full-frame"},
+      "category_preferences": {"body_style": "mirrorless"},
+      "clarification_needed": false
+    }
+  },
+  {
+    "id": "camera_budget_sensor",
+    "query": "Camera under $1500 with a full-frame sensor",
+    "category": "camera",
+    "expected": {
+      "category": "camera",
+      "hard_constraints": {"max_budget": 1500},
+      "category_hard_constraints": {"sensor_format": "full-frame"},
+      "clarification_needed": false
+    }
+  }
+]

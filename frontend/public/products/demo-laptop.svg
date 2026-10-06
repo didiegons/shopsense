@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" role="img" aria-labelledby="title description">
+  <title id="title">Generic laptop demo illustration</title>
+  <desc id="description">A fictional silver laptop with a green screen, created as a generic ShopSense demo illustration.</desc>
+  <rect width="480" height="360" fill="#e9eeea"/>
+  <ellipse cx="240" cy="284" rx="158" ry="17" fill="#cbd5ce"/>
+  <g stroke="#315b4a" stroke-linejoin="round" stroke-width="5">
+    <path d="M142 83h196c9 0 16 7 16 16v129H126V99c0-9 7-16 16-16Z" fill="#314b40"/>
+    <path d="M143 100h194v111H143z" fill="#86aa91" stroke="#dce7df" stroke-width="3"/>
+    <path d="m104 237 24-9h224l24 9-13 27c-2 5-7 8-13 8H130c-6 0-11-3-13-8Z" fill="#d9e0dc"/>
+    <path d="M208 238h64l8 8h-80z" fill="#afbbb4" stroke-width="2"/>
+    <path d="M136 250h208" fill="none" stroke="#a1b0a7" stroke-width="2"/>
+  </g>
+  <path d="M240 119c-29 0-47 21-47 48 25 1 43-9 47-30 4 21 22 31 47 30 0-27-18-48-47-48Z" fill="#d8e6d9" opacity=".9"/>
+  <text x="240" y="326" fill="#315b4a" font-family="Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="1.2" text-anchor="middle">GENERIC DEMO ILLUSTRATION</text>
+</svg>

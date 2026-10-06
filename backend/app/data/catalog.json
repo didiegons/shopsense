@@ -1,0 +1,162 @@
+[
+  {
+    "product_id": "demo-laptop-001",
+    "brand": "Northstar Demo",
+    "model_name": "Atlas 14 Student",
+    "category": "laptop",
+    "image_url": "/products/demo-laptop.svg",
+    "specifications": {"processor": "8-core mobile processor", "ram_gb": 16, "storage_gb": 512, "weight_kg": 1.42, "operating_system": "Windows 11"},
+    "rating": 4.3,
+    "offer": {"price": 749, "currency": "USD", "availability": "in_stock", "source": {"source_name": "ShopSense Demo Catalog", "source_url": "https://example.invalid/demo/shopsense/demo-laptop-001", "source_checked_date": "2026-09-29", "data_status": "demo"}}
+  },
+  {
+    "product_id": "demo-laptop-002",
+    "brand": "Northstar Demo",
+    "model_name": "Atlas 16 Performance",
+    "category": "laptop",
+    "image_url": "/products/demo-laptop.svg",
+    "specifications": {"processor": "12-core mobile processor", "ram_gb": 32, "storage_gb": 1024, "weight_kg": 1.88, "operating_system": "Windows 11"},
+    "rating": 4.6,
+    "offer": {"price": 999, "currency": "USD", "availability": "in_stock", "source": {"source_name": "ShopSense Demo Catalog", "source_url": "https://example.invalid/demo/shopsense/demo-laptop-002", "source_checked_date": "2026-09-29", "data_status": "demo"}}
+  },
+  {
+    "product_id": "demo-laptop-003",
+    "brand": "Pinecone Demo",
+    "model_name": "Fieldbook 13",
+    "category": "laptop",
+    "image_url": "/products/demo-laptop.svg",
+    "specifications": {"processor": "6-core mobile processor", "ram_gb": 8, "storage_gb": 256, "weight_kg": 1.18, "operating_system": "Windows 11"},
+    "rating": 4.0,
+    "offer": {"price": 549, "currency": "USD", "availability": "in_stock", "source": {"source_name": "ShopSense Demo Catalog", "source_url": "https://example.invalid/demo/shopsense/demo-laptop-003", "source_checked_date": "2026-09-29", "data_status": "demo"}}
+  },
+  {
+    "product_id": "demo-laptop-004",
+    "brand": "Pinecone Demo",
+    "model_name": "Fieldbook 15",
+    "category": "laptop",
+    "image_url": "/products/demo-laptop.svg",
+    "specifications": {"processor": "8-core mobile processor", "ram_gb": 16, "storage_gb": 512, "weight_kg": 1.72, "operating_system": "Windows 11"},
+    "rating": null,
+    "offer": {"price": 699, "currency": "USD", "availability": "unknown", "source": {"source_name": "ShopSense Demo Catalog", "source_url": "https://example.invalid/demo/shopsense/demo-laptop-004", "source_checked_date": "2026-09-29", "data_status": "demo"}}
+  },
+  {
+    "product_id": "demo-laptop-005",
+    "brand": "Maple Demo",
+    "model_name": "Campus Air 14",
+    "category": "laptop",
+    "image_url": "/products/demo-laptop.svg",
+    "specifications": {"processor": "10-core mobile processor", "ram_gb": 16, "storage_gb": 512, "weight_kg": 1.31, "operating_system": "Windows 11"},
+    "rating": 4.4,
+    "offer": {"price": 899, "currency": "USD", "availability": "in_stock", "source": {"source_name": "ShopSense Demo Catalog", "source_url": "https://example.invalid/demo/shopsense/demo-laptop-005", "source_checked_date": "2026-09-29", "data_status": "demo"}}
+  },
+  {
+    "product_id": "demo-laptop-006",
+    "brand": "Maple Demo",
+    "model_name": "Campus Pro 14",
+    "category": "laptop",
+    "image_url": "/products/demo-laptop.svg",
+    "specifications": {"processor": "12-core mobile processor", "ram_gb": 32, "storage_gb": 1024, "weight_kg": 1.46, "operating_system": "Windows 11"},
+    "rating": 4.7,
+    "offer": {"price": 1249, "currency": "USD", "availability": "in_stock", "source": {"source_name": "ShopSense Demo Catalog", "source_url": "https://example.invalid/demo/shopsense/demo-laptop-006", "source_checked_date": "2026-09-29", "data_status": "demo"}}
+  },
+  {
+    "product_id": "demo-laptop-007",
+    "brand": "Redwood Demo",
+    "model_name": "Workstation 15",
+    "category": "laptop",
+    "image_url": "/products/demo-laptop.svg",
+    "specifications": {"processor": "16-core mobile processor", "ram_gb": 32, "storage_gb": 1024, "weight_kg": 2.12, "operating_system": "Windows 11"},
+    "rating": 4.5,
+    "offer": {"price": 1499, "currency": "USD", "availability": "in_stock", "source": {"source_name": "ShopSense Demo Catalog", "source_url": "https://example.invalid/demo/shopsense/demo-laptop-007", "source_checked_date": "2026-09-29", "data_status": "demo"}}
+  },
+  {
+    "product_id": "demo-laptop-008",
+    "brand": "Redwood Demo",
+    "model_name": "Workstation 14 Base",
+    "category": "laptop",
+    "image_url": "/products/demo-laptop.svg",
+    "specifications": {"processor": "10-core mobile processor", "ram_gb": 16, "storage_gb": 512, "weight_kg": 1.68, "operating_system": "Windows 11"},
+    "rating": 4.1,
+    "offer": {"price": 1099, "currency": "USD", "availability": "out_of_stock", "source": {"source_name": "ShopSense Demo Catalog", "source_url": "https://example.invalid/demo/shopsense/demo-laptop-008", "source_checked_date": "2026-09-29", "data_status": "demo"}}
+  },
+  {
+    "product_id": "demo-laptop-009",
+    "brand": "Bluejay Demo",
+    "model_name": "Openbook 14",
+    "category": "laptop",
+    "image_url": "/products/demo-laptop.svg",
+    "specifications": {"processor": "8-core mobile processor", "ram_gb": 16, "storage_gb": 512, "weight_kg": 1.55, "operating_system": "Ubuntu Linux"},
+    "rating": 4.2,
+    "offer": {"price": 829, "currency": "USD", "availability": "in_stock", "source": {"source_name": "ShopSense Demo Catalog", "source_url": "https://example.invalid/demo/shopsense/demo-laptop-009", "source_checked_date": "2026-09-29", "data_status": "demo"}}
+  },
+  {
+    "product_id": "demo-laptop-010",
+    "brand": "Bluejay Demo",
+    "model_name": "Openbook 16 Dev",
+    "category": "laptop",
+    "image_url": "/products/demo-laptop.svg",
+    "specifications": {"processor": "12-core mobile processor", "ram_gb": 32, "storage_gb": 1024, "weight_kg": 1.95, "operating_system": "Ubuntu Linux"},
+    "rating": null,
+    "offer": {"price": 1199, "currency": "USD", "availability": "unknown", "source": {"source_name": "ShopSense Demo Catalog", "source_url": "https://example.invalid/demo/shopsense/demo-laptop-010", "source_checked_date": "2026-09-29", "data_status": "demo"}}
+  },
+  {
+    "product_id": "demo-laptop-011",
+    "brand": "Willow Demo",
+    "model_name": "Go 13",
+    "category": "laptop",
+    "image_url": "/products/demo-laptop.svg",
+    "specifications": {"processor": "6-core mobile processor", "ram_gb": 8, "storage_gb": 256, "weight_kg": 1.09, "operating_system": "ChromeOS"},
+    "rating": 3.9,
+    "offer": {"price": 429, "currency": "USD", "availability": "in_stock", "source": {"source_name": "ShopSense Demo Catalog", "source_url": "https://example.invalid/demo/shopsense/demo-laptop-011", "source_checked_date": "2026-09-29", "data_status": "demo"}}
+  },
+  {
+    "product_id": "demo-laptop-012",
+    "brand": "Willow Demo",
+    "model_name": "Go 14 Plus",
+    "category": "laptop",
+    "image_url": "/products/demo-laptop.svg",
+    "specifications": {"processor": "8-core mobile processor", "ram_gb": 16, "storage_gb": 256, "weight_kg": 1.37, "operating_system": "ChromeOS"},
+    "rating": 4.1,
+    "offer": {"price": 599, "currency": "USD", "availability": "in_stock", "source": {"source_name": "ShopSense Demo Catalog", "source_url": "https://example.invalid/demo/shopsense/demo-laptop-012", "source_checked_date": "2026-09-29", "data_status": "demo"}}
+  },
+  {
+    "product_id": "demo-laptop-013",
+    "brand": "Cedar Demo",
+    "model_name": "Creator 14",
+    "category": "laptop",
+    "image_url": "/products/demo-laptop.svg",
+    "specifications": {"processor": "12-core mobile processor", "ram_gb": 32, "storage_gb": 1024, "weight_kg": 1.62, "operating_system": "Windows 11"},
+    "rating": 4.6,
+    "offer": {"price": 1399, "currency": "USD", "availability": "in_stock", "source": {"source_name": "ShopSense Demo Catalog", "source_url": "https://example.invalid/demo/shopsense/demo-laptop-013", "source_checked_date": "2026-09-29", "data_status": "demo"}}
+  },
+  {
+    "product_id": "demo-laptop-014",
+    "brand": "Cedar Demo",
+    "model_name": "Creator 16 Base",
+    "category": "laptop",
+    "image_url": "/products/demo-laptop.svg",
+    "specifications": {"processor": "10-core mobile processor", "ram_gb": 16, "storage_gb": 512, "weight_kg": 1.91, "operating_system": "Windows 11"},
+    "rating": 4.2,
+    "offer": {"price": 1149, "currency": "USD", "availability": "in_stock", "source": {"source_name": "ShopSense Demo Catalog", "source_url": "https://example.invalid/demo/shopsense/demo-laptop-014", "source_checked_date": "2026-09-29", "data_status": "demo"}}
+  },
+  {
+    "product_id": "demo-laptop-015",
+    "brand": "Aspen Demo",
+    "model_name": "Labmate 14",
+    "category": "laptop",
+    "image_url": "/products/demo-laptop.svg",
+    "specifications": {"processor": "10-core mobile processor", "ram_gb": 24, "storage_gb": 512, "weight_kg": 1.49, "operating_system": "Windows 11"},
+    "rating": 4.3,
+    "offer": {"price": 979, "currency": "USD", "availability": "in_stock", "source": {"source_name": "ShopSense Demo Catalog", "source_url": "https://example.invalid/demo/shopsense/demo-laptop-015", "source_checked_date": "2026-09-29", "data_status": "demo"}}
+  },
+  {
+    "product_id": "demo-laptop-016",
+    "brand": "Aspen Demo",
+    "model_name": "Labmate 15 Heavy Duty",
+    "category": "laptop",
+    "image_url": "/products/demo-laptop.svg",
+    "specifications": {"processor": "14-core mobile processor", "ram_gb": 64, "storage_gb": 2048, "weight_kg": 2.24, "operating_system": "Ubuntu Linux"},
+    "rating": 4.8,
+    "offer": {"price": 1599, "currency": "USD", "availability": "in_stock", "source": {"source_name": "ShopSense Demo Catalog", "source_url": "https://example.invalid/demo/shopsense/demo-laptop-016", "source_checked_date": "2026-09-29", "data_status": "demo"}}
+  }
+]
