@@ -1,0 +1,13 @@
+.gcloudignore
+**/__pycache__/
+**/*.py[cod]
+.pytest_cache/
+.venv/
+tests/
+evaluations/
+scripts/
+.env*
+*.pem
+*.key
+*credentials*.json
+*service-account*.json

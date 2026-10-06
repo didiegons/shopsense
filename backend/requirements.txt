@@ -1,6 +1,4 @@
-fastapi
-uvicorn[standard]
-pydantic
-pytest
-httpx
-google-genai
+fastapi==0.142.1
+uvicorn[standard]==0.54.0
+pydantic==2.13.5
+google-genai==2.25.0

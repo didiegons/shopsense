@@ -1,0 +1,9 @@
+.gcloudignore
+node_modules/
+.next/
+out/
+.git/
+*.tsbuildinfo
+next-env.d.ts
+.env*
+*.pem

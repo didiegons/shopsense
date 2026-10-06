@@ -7,11 +7,20 @@ Local FastAPI service for the deterministic product-search milestone. The catalo
 From the `backend/` directory:
 
 ```powershell
-python -m pip install -r requirements.txt
+python -m pip install -r requirements-dev.txt
+$env:WATCHFILES_FORCE_POLLING = "true"   # needed for --reload to see edits in OneDrive-synced folders
 python -m uvicorn app.main:app --reload
 ```
 
-The API is available at `http://localhost:8000`. Interactive API documentation is at `http://localhost:8000/docs`.
+`requirements.txt` holds the pinned runtime dependencies used by the container image; `requirements-dev.txt` adds the test tools. The API is available at `http://localhost:8000`. Interactive API documentation is at `http://localhost:8000/docs` (disabled when `APP_ENV=production`).
+
+### Configuration
+
+| Variable | Default | Purpose |
+| -------- | ------- | ------- |
+| `CORS_ALLOW_ORIGINS` | `http://localhost:3000` | Comma-separated browser origins allowed to call the API |
+| `APP_ENV` | `development` | `production` disables `/docs`, `/redoc`, and `/openapi.json` |
+| `VERTEX_AI_PROJECT`, `VERTEX_AI_REGION`, `SHOPSENSE_INTENT_MODEL` | unset | Optional Vertex AI intent extraction (see below) |
 
 ## Test
 

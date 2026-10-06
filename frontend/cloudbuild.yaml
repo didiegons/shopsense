@@ -1,0 +1,19 @@
+# Builds the frontend image with the backend URL baked in (NEXT_PUBLIC_* is build-time).
+# gcloud builds submit frontend --config frontend/cloudbuild.yaml \
+#   --substitutions=_API_URL=https://shopsense-api-PROJECT_NUMBER.us-central1.run.app,_TAG=<git-sha>
+steps:
+  - name: gcr.io/cloud-builders/docker
+    args:
+      - build
+      - --build-arg
+      - NEXT_PUBLIC_API_URL=${_API_URL}
+      - -t
+      - us-central1-docker.pkg.dev/$PROJECT_ID/shopsense/shopsense-web:${_TAG}
+      - .
+images:
+  - us-central1-docker.pkg.dev/$PROJECT_ID/shopsense/shopsense-web:${_TAG}
+substitutions:
+  _API_URL: ""
+  _TAG: manual
+options:
+  logging: CLOUD_LOGGING_ONLY
