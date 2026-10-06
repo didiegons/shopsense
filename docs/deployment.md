@@ -2,6 +2,28 @@
 
 ShopSense deploys as two Cloud Run services in the existing `forensai` Google Cloud project (project number `425356381200`, region `us-central1`), alongside the existing `forensai` service. That service is not modified. The assignment mentions AWS App Runner; this project uses Google Cloud Run instead, consistent with the ForensAI deployment.
 
+## Current Deployment (2026-10-05)
+
+| Item | Value |
+| ---- | ----- |
+| Frontend (public) | https://shopsense-web-425356381200.us-central1.run.app (also https://shopsense-web-vt332ck57q-uc.a.run.app) |
+| Backend API | https://shopsense-api-425356381200.us-central1.run.app (also https://shopsense-api-vt332ck57q-uc.a.run.app) |
+| `shopsense-web` revision | `shopsense-web-00001-fc5` (image `shopsense-web:915d7a4`), 100% of traffic |
+| `shopsense-api` revision | `shopsense-api-00002-vxg` (image `shopsense-api:259ae69`), 100% of traffic |
+| Source repository | https://github.com/didiegons/shopsense (public; no automatic deployment configured) |
+
+> **Intent parsing:** Vertex AI is intentionally **not enabled** in the production deployment yet. The `VERTEX_AI_*` and `SHOPSENSE_INTENT_MODEL` variables are unset and `shopsense-api` has no Vertex AI role, so the API uses the **deterministic intent parser**. The UI shows "Deterministic fallback" as the parser. Vertex AI will be enabled and tested (M24) as a separate, approved step (see [Enabling Vertex AI Later](#enabling-vertex-ai-later-separate-approved-step)).
+
+### Verification Results
+
+- **Browser regression:** M01–M23 passed against the public deployment. M17/M18 (API unavailable) were exercised by making the browser's API requests fail, leaving the production backend running. M24 (live Vertex AI) was not run because Vertex AI is not enabled.
+- **Accessibility:** axe-core (WCAG 2.2 AA + best practice) reported **0 violations** in all six tested UI states on the public frontend.
+- **API smoke tests:** `/health` 200; search returns all 16 demo products unfiltered and correct hard-filter results; no-match returns an empty list; `NaN` returns a clean 422; `/docs`, `/redoc`, and `/openapi.json` return 404 (`APP_ENV=production`).
+- **CORS:** preflights from both frontend URLs are allowed; `https://evil.example`, `http://localhost:3000`, and the ForensAI URL are rejected.
+- **Frontend checks:** all API calls go to the production backend URL; product images load; security headers are present and `X-Powered-By` is absent; no browser console errors.
+- **Logs:** the backend and frontend logs showed no server errors (0 error-level entries, 0 HTTP 5xx) during deployment and testing.
+- **ForensAI:** unchanged on revision `forensai-00010-kcx` (generation 10) and healthy (HTTP 200).
+
 ## Architecture
 
 ```
